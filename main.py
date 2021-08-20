@@ -39,20 +39,20 @@ def randompoly():
 def solution(data,A,B,C,answer1,answer2):
  classify = data.find('^2')
 
- if classify > 1: #2ì°¨
-  num_list = data.split('x^2') #ë¬¸ìì—´->ê³„ìˆ˜ ë¶„ë¦¬í›„ intí˜•ìœ¼ë¡œ ë³€ê²½
+ if classify > 1: #2ì°?
+  num_list = data.split('x^2') #ë¬¸ì?—´->ê³„ìˆ˜ ë¶„ë¦¬?›„ int?˜•?œ¼ë¡? ë³?ê²?
   A = int(num_list[0]) #x^2 ê³„ìˆ˜
   num_list = num_list[1].split('x')
   B = int(num_list[0]) #x ê³„ìˆ˜
-  C = int(num_list[1]) #ìƒìˆ˜
+  C = int(num_list[1]) #?ƒ?ˆ˜
   answer1= -((B+math.sqrt(B*B-4*A*C))/2*A)
   answer2= -((B-math.sqrt(B*B-4*A*C))/2*A)
   print(answer1,answer2)
   return(answer1, answer2)
- else: #1ì°¨
+ else: #1ì°?
   num_list = data.split('x')
   B = int(num_list[0]) #x ê³„ìˆ˜
-  C = int(num_list[1]) #ìƒìˆ˜
+  C = int(num_list[1]) #?ƒ?ˆ˜
   answer1r=(-C/B)
   print(answer1)
   print(answer1)
