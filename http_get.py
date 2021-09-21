@@ -4,7 +4,7 @@ import json
 input=sys.stdin.readline
 print("장소 검색:",end="")
 place=str(input())
-search='https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBLMbHO69BPF2HNdQ1YT72pKEHLjUcvVLw' \
+search='https://maps.googleapis.com/maps/api/geocode/json?key=api' \
 '&sensor=false&language=ko&address={}'.format(place)
 
 response=requests.get(search)
